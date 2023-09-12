@@ -2,7 +2,7 @@
 print("Name of the upstream model", self.args.upstream)
 print("Model.training status:", model.training)
 print("Loading custom pretrained upstream model, added by the user")
-if self.args.upstream == 'hubert':
+if self.args.upstream == 'hubert_base':
     custom_ckpt_path = "path_to_checkpoints/states-3600.ckpt"
 elif self.args.upstream == 'wavlm_base':
     custom_ckpt_path = "path_to_checkpoints/states-3600.ckpt"
