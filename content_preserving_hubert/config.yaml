@@ -1,0 +1,26 @@
+runner:
+  total_steps: 3600
+  gradient_clipping: 1
+  gradient_accumulate_steps: 8
+  log_step: 100
+  eval_step: 3601
+  save_step: 100
+  max_keep: 1
+
+optimizer:
+  name: AdamW
+  lr: 2.0e-5
+
+scheduler:
+  name: linear_schedule_with_warmup
+  num_warmup_steps: 1000
+
+downstream_expert:
+  datarc:
+    path: path_to_libri # dir structure: path_to_libri/LibriSpeech/train-clean-100
+    num_workers: 8
+    train_batch_size: 1
+
+  modelrc:
+    model_name: HubertBase
+    input_dim: 256
