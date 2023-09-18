@@ -33,7 +33,7 @@ model = Upstream(\
 or \
 ```python3 run_downstream.py -m train -p /path_to_experiment -u wavlm_base -d content_preserving_wavlm -f -l -1``` 
 
-## Step 4: Evaluate the SCORE finetuned model on QbE,ASR, and PR for SUPERB benchmark
+## Step 4: Evaluate the SCORE finetuned model on QbE, ASR, and PR for SUPERB benchmark
 Download the needed data, set data paths etc for the respective tasks. More info at [S3PRL/SUPERB](https://github.com/s3prl/s3prl/blob/main/s3prl/downstream/docs/superb.md) \
 Comment the layer freezing part that has been added in Step 2 \
 Add the code from ```runner_part_load_custom.py``` to the same place. Set path that has saved checkpoints from Step 3. \
