@@ -39,8 +39,10 @@ Comment the layer freezing part that has been added in Step 2 \
 Add the code from ```runner_part_load_custom.py``` to the same place. Set path that has saved checkpoints from Step 3. \
 
 ### QbE
-No training is required for this task. Please have a look at [S3PRL/SUPERB](https://github.com/s3prl/s3prl/blob/main/s3prl/downstream/docs/superb.md) for more details
+No training is required for this task. Please have a look at [S3PRL/SUPERB](https://github.com/s3prl/s3prl/blob/main/s3prl/downstream/docs/superb.md) for more details.
 Run DTW with specific layers, WavLM: wavlm_base, HuBERT: hubert_base \
+
+Note: -1 stands for the last layer (i.e. 12th)
 
 For the test set
 
