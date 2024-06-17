@@ -1,5 +1,5 @@
 # ICASSP-2024
-
+Code for paper: **SCORE: Self-supervised Correspondence Fine-tuning for Improved Content Representations**
 ## Install s3prl toolkit
 ```
 conda create -n s3prl python=3.8 \
